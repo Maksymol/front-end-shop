@@ -40,7 +40,6 @@ const btnClickHandler = (e) => {
 
   if (target && target.classList.contains("item-actions__cart")) {
     cartCounter = incrementCounter(cartCounterLabel, cartCounter);
-
     cartPrice = getPrice(target, cartPrice);
 
     disableControls(target, btnClickHandler);
